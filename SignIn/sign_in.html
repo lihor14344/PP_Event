@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign In</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="sign_in.css"/>
+</head>
+<body class="bg-light flex-center full-height">
+  <div class="form-container">
+    <div class="header-section">
+      <!-- <h1 class="header-text">Find Yourself There</h1> -->
+      <div class="logo-section">
+        <img src="https://storage.googleapis.com/a1aa/image/CXVWhKUXwr4jAhaymcIuxyVOApwZ31ercdMnrnUDjP86EG9JA.jpg" alt="GatherUp logo" class="logo"/>
+        <div class="title-section">
+            <h2 class="title">GatherUp</h2>
+          </div>
+      </div>
+      
+    </div>
+    
+    <div class="form-section">
+      <h3 class="form-header">Sign In</h3>
+      <form>
+        <div class="input-group">
+          <input type="email" placeholder="Email" class="input"/>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password" class="input"/>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="show-password" class="checkbox"/>
+          <label for="show-password" class="checkbox-label">Show password</label>
+        </div>
+        <div class="forgot-password">
+          <a href="forgot_password.html" class="checkbox-label">Forget password?</a>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="button">Sign in</button>
+        </div>
+        <div class="account-text">
+          <p class="account-message">You don't have any account?</p>
+        </div>
+        <div class="button-group">
+          <button type="submit" class="button">Sign up</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+</html>
