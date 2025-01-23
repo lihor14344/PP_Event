@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.user-info {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-info i {
+    font-size: 40px;
+}
+
+.user-info span {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+nav ul li a i {
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    color: #008080;
+}
+
+.events {
+    margin-bottom: 40px; /* Adds space below upcoming events */
+    padding-bottom: 20px; /* Extra padding */
+}
+
+.main-content {
+    width: calc(100% - 250px);
+    padding: 50px;
+}
+
+.breadcrumb {
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #555;
+}
+
+.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+/* New grid styling for events */
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* space between cards */
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #4CAF50;
+    padding: 16px;
+    width: 255px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+.event-card:hover {
+    transform: scale(1.01);  /* Slightly enlarge the card */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  /* Increase shadow depth */
+    background-color: #f1f1f1;  /* Change background color slightly */
+}
+
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.event-card p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.event-card h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.event-card .members {
+    display: flex;
+    align-items: center;
+}
+
+.event-card .members i {
+    color: #4CAF50;
+    margin-right: 8px;
+}
+
+.see-more-link {
+    position: absolute;
+    right: 10px;
+    color: #3b82f6;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 20px 10px;
+    margin-right: 1px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-bar-container {
+    max-width: 800px; /* Centered and fixed width */
+    margin: 2rem auto; /* Margin from top and bottom */
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+.main-container h1{
+    margin-left: 2rem;
+}
+
+
+/* .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.pagination a.disabled {
+    color: #ccc;
+    pointer-events: none;
+    border: 1px solid #ccc;
+} */
+
+
+.pagination {
+    display: flex;
+    justify-content: center; /* Centers the pagination */
+    align-items: center;
+    gap: 5px; /* Adds space between buttons */
+    margin-top: 30px;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: #333;
+    border-radius: 5px;
+  }
+  
+  .pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .pagination a.disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  
