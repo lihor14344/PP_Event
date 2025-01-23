@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="organizer_home.css"> 
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="user-info">
+                <i class="fas fa-user-circle"></i>
+                <span>Organizer</span>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-calendar-plus"></i>
+                            Create Event
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-clipboard-list"></i>
+                            View Registration
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                            Task & Alert
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-dollar-sign"></i>
+                            Fees
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="main-content">
+            <div class="breadcrumb">
+                <a href="#">Home</a>
+            </div>
+            <h1 class="main-title">My Event</h1>
+
+            <!-- search -->
+            <!-- <div class="search-bar">
+                <input type="text" placeholder="Search for all events">
+                <div class="filters">
+                    <select>
+                        <option>Category</option>
+                    </select>
+                    <select>
+                        <option>Date</option>
+                    </select>
+                    <select>
+                        <option>Location</option>
+                    </select>
+                </div>
+            </div> -->
+
+
+            <!-- Upcoming Events -->
+            <div class="events">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-semibold">Upcoming ></h2>
+                </div>
+
+                <div class="event-container">
+                    <!-- Event Card 1 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 5 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- see more -->
+                <div class="relative">
+                    <a href="upcoming.html" class="see-more-link">See More</a>
+                </div>
+            </div>
+
+            <!-- Recent Past Events -->
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-semibold">Recent Past Events ></h2>
+                </div>
+
+                <div class="event-container">
+                    <!-- Event Card 1 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+
+                    <!-- Event Card 5 -->
+                    <div class="event-card">
+                        <img alt="Event image" src="https://storage.googleapis.com/a1aa/image/KbFeIxaObU0WLKJbQKhFMgXfkN6b1O4wSe4ZCPBTYaa54qOoA.jpg" />
+                        <p>Postal service can be private or public, though many governments place restrictions on private systems...</p>
+                        <h3>Engineering Day</h3>
+                        <p>26 October 2024</p>
+                        <p>@ CKCC, RUPP</p>
+                        <div class="members">
+                            <i class="fas fa-users"></i>
+                            <span>Members joined</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- see more -->
+                <div class="relative">
+                    <a href="past.html" class="see-more-link">See More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
